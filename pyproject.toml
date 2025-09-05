@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polysolve"
+authors = [{name = "Yufan_Kambang", email = "yufan.kambang@stfc.ac.uk"}]
+requires-python = ">= 3.8"
+readme = "README.md"
+description = "this is practice in creating a project library"
+license = {text = "BSD-3-Clause"}
+
+keywords = ["library", "workshop"]
+dependencies = ["cowsay"]
+classifiers = ["training"]
+dynamic = ["version"]
+
+[project.urls]
+Homepage="https://github.com/YufanKambang/PolysolveLin"
+Repository="https://github.com/YufanKambang/PolysolveLin.git"
+
+[tool.setuptools.dynamic]
+version = {attr = "polysolve.__version__"}
